@@ -60,21 +60,120 @@
         .right{text-align: right;
           .wishlist:hover{color: var(--secondary-color); text-decoration: none;}
           .wishlist{
+            position: relative;
             transition: 0.4s;
             cursor: pointer;
             display: inline;
             a{color: white; text-decoration: none; transition: 0.4s;}
             a:hover{color: var(--secondary-color); text-decoration: none;}
+            >ul{
+              background-color: white;
+              position: absolute;
+              transform-origin: top;
+              transition: 0.4s;
+              width: 160px;
+              text-align: left;
+              overflow: hidden;
+              left: -50px;
+              a{color: black; display: contents;}
+              a:hover{color: black;}
+              li{ transition: 0.4s;
+                list-style: none;
+                img{padding: 10px;}
+              }
+              li:hover{background-color: var(--border-color);}
+            }
+            .show0921{
+              transform: scaleY(0);
+            }
+          }
+          
+        }
+      }
+      .between-menu{
+        height: 125px;
+        background-color: var(--background-color);
+        .left{display: flex; justify-content: center; align-items: center; img{width: 200px; height: auto; margin-top: 17px;}}
+        .right{
+          .wrap{
+            cursor: pointer;
+            width: 70%;
+            height: 100%;
+            float: right;
+            display: flex; justify-content: space-between; align-items: center;
+            >i{font-size: 40px; color: white; }
+            p:nth-child(1){ font-weight: 800; padding-bottom: -5px;}
+            p:nth-child(2){ font-size: 13px;}
+            p{ color: white; transition: 0.4s; margin-top: 0px; margin-bottom: 3px;}
+            p:hover{color: var(--secondary-color);}
+          }
+        }
+        .between{
+          display: flex; justify-content: center; align-items: center;
+          form{
+            width: 100%;
+            position: relative;
+            input{
+              width: 100%;
+              height: 50px;
+              outline: none;
+              border: none;
+              border-radius: 35px;
+              padding-left: 30px;
+              padding-right: 50px;
+            }
+            button{position: absolute; background: none; border: none; font-size: 25px; top: 50%; right: 15px; transform: translateY(-50%);}
+          }
+        }
+        .left,.right,.between{
+          height: 125px;
+        }
+      }
+      .bottom-option{
+        background-color: var(--secondary-background-color);
+        .wrap-categories{
+          display: grid;
+          grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+          height: 60px;
+          grid-gap: 10px;
+          .categories{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+          }
+          a{display: contents; text-decoration: none; color: white;}
+          .go{
+            font-size: 14px;
+            transition: 0.4s;
+            img{margin-right: 10px;}
+          }
+          .go:hover{background-color: var(--secondary-color);}
+          >div:nth-child(1){background-color: var(--secondary-color); cursor: pointer;}
+          .cart{
+            position: relative;
+           
+            .cart-gap{
+              cursor: pointer;
+              display: flex; justify-content: center; align-items: center; flex-wrap: wrap;
+              position: absolute; top: 0; right: 0; z-index: 2;
+             width: 85px; height: 80px; background-color: var(--secondary-color);
+             border-bottom-left-radius: 50%; border-bottom-right-radius: 50%; 
+             i{font-size: 40px;}
+             p{font-size: 12px;}
+            }
+            .list-cart{
+              position: absolute; top: 60px; right: 0;z-index: 1;
+              width: 290px; height: 170px;
+              background-color: var(--background-color);
+              transform-origin: top; overflow: hidden; transition: 0.4s;
+            }
+            .hidden{transform: scaleY(0);}
           }
         }
       }
     }
     // end menu for computer
-    // menu for mobile
-    .menu-mobile{
-     
-    }
-    // end menu for mobile
   }
   section{}
   footer{}

@@ -21,21 +21,75 @@
     <main>
       <header>
         <!-- menu for computer -->
-        <div class="menu-desktop d-none d-lg-block">
-          <div class="top-title container-fluid">
+        <div class="menu-desktop ">
+          <div class="top-title container-fluid d-none d-lg-block">
             <div class="container">
               <div class="row">
                 <div class="left col-6">Welcome to GoMart Grocery Big Store</div>
                 <div class="right col-6">
                   <div style="padding-right: 15px;" class="wishlist"><a href="">Wishlist (0)</a></div>
-                  |<div style="padding-left: 15px; padding-right: 15px;" class="wishlist">English <i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                  |<div style="padding-left: 15px;" class="wishlist">USD <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                  |<div onclick="option_head_top1()" style="padding-left: 15px; padding-right: 15px;" class="wishlist t123">English <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <ul id="p31120926" class="show0921">
+                     <a href=""> <li><img src="https://innovatory.in/theme/prestashop/Gomart/img/l/1.jpg" alt=""> English</li></a>
+                     <a href=""> <li><img src="https://innovatory.in/theme/prestashop/Gomart/img/l/1.jpg" alt=""> Spanish holo</li></a>
+                     <a href=""> <li><img src="https://innovatory.in/theme/prestashop/Gomart/img/l/1.jpg" alt=""> English</li></a>
+                     <a href=""> <li><img src="https://innovatory.in/theme/prestashop/Gomart/img/l/1.jpg" alt=""> English</li></a>
+                     <a href=""> <li><img src="https://innovatory.in/theme/prestashop/Gomart/img/l/1.jpg" alt=""> English</li></a>
+                      
+                    </ul>
+                  </div>
+                  |<div onclick="option_head_top2()" style="padding-left: 15px;" class="wishlist t124">USD <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <ul id="p31120927" class="show0921">
+                      <a href=""> <li><img src="https://innovatory.in/theme/prestashop/Gomart/img/l/1.jpg" alt=""> USD $</li></a>
+                      <a href=""> <li><img src="https://innovatory.in/theme/prestashop/Gomart/img/l/1.jpg" alt=""> EUR €</li></a>                       
+                     </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="between-menu"></div>
-          <div class="bottom-option"></div>
+          <!-- menu for mobile -->
+          <div class="top-title-mobile d-block d-lg-none"></div>
+          <!-- and menu for mobile -->
+          <div class="between-menu container-fluid">
+            <div class="container">
+              <div class="row">
+                <div class="left col-3 d-none d-lg-block"><a href=""><img src="https://innovatory.in/theme/prestashop/Gomart/img/demo-shop-logo-1557119198.jpg" alt=""></a></div>
+                <div class="between col-lg-6 col-ld-12">
+                  <form action="" method="POST">
+                    <input type="text" placeholder="Search our catalog">
+                    <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                  </form>
+                </div>
+                <div class="right col-3 d-none d-lg-block">
+                  <div class="wrap">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                    <div class="block">
+                      <p>My Account <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                      <p>Register & Login</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-option d-none d-lg-block container-fluid">
+            <div class="wrap-categories container">
+                <div class="categories"><i style="padding-right: 20px;" class="fa fa-bars" aria-hidden="true"></i>TOP CATEGORIES</div>
+                <a href=""><div class="categories go"><img src="https://innovatory.in/theme/prestashop/Gomart/modules/itmegamenu/views/img/icons/a7be6f821292cddce141ab8599b1ed11221a4dff_icon-1.png" alt="">BEVERAGES</div></a>
+                <a href=""><div class="categories go"><img src="https://innovatory.in/theme/prestashop/Gomart/modules/itmegamenu/views/img/icons/f2fcda44dbf91743d28190b0009bcc62d792aaf5_icon-2.png" alt="">DRY FOOD</div></a>
+                <a href=""><div class="categories go"><img src="https://innovatory.in/theme/prestashop/Gomart/modules/itmegamenu/views/img/icons/bd4f7bd723b52f921b322fc89684d1b6230844be_icon-3.png" alt="">GRAIN FOOD</div></a>
+                <a href=""><div class="categories go"><img src="https://innovatory.in/theme/prestashop/Gomart/modules/itmegamenu/views/img/icons/3877c228a0b282efb03f8de81b3c86e5cce19406_icon-4.png" alt="">ORGANIC</div></a>
+                <a href=""><div class="categories go"><img src="https://innovatory.in/theme/prestashop/Gomart/modules/itmegamenu/views/img/icons/3b380ee94610b8bc97dc498f9fa640c60681981c_icon-5.png" alt="">BABY FOOD</div></a>
+                <div class="categories cart">
+                  <div class="cart-gap" id="p31121240">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <p>CART (0)</p>
+                  </div>
+                  <div class="list-cart hidden" id="p31121241"></div>
+                </div>
+            </div>
+          </div>
         </div>
         <!-- end menu for computer -->
         <!-- menu for mobile -->
@@ -57,5 +111,8 @@
         <button type="submit" class="btn btn-primary">Subcribe</button>
       </form>
     </div>
+
+    <!-- my script -->
+    <script src="js/index.js"></script>
   </body>
 </html>

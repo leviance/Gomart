@@ -96,6 +96,7 @@ main header .menu-desktop .top-title .right .wishlist:hover {
 }
 
 main header .menu-desktop .top-title .right .wishlist {
+  position: relative;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   cursor: pointer;
@@ -112,5 +113,260 @@ main header .menu-desktop .top-title .right .wishlist a {
 main header .menu-desktop .top-title .right .wishlist a:hover {
   color: var(--secondary-color);
   text-decoration: none;
+}
+
+main header .menu-desktop .top-title .right .wishlist > ul {
+  background-color: white;
+  position: absolute;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 160px;
+  text-align: left;
+  overflow: hidden;
+  left: -50px;
+}
+
+main header .menu-desktop .top-title .right .wishlist > ul a {
+  color: black;
+  display: contents;
+}
+
+main header .menu-desktop .top-title .right .wishlist > ul a:hover {
+  color: black;
+}
+
+main header .menu-desktop .top-title .right .wishlist > ul li {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  list-style: none;
+}
+
+main header .menu-desktop .top-title .right .wishlist > ul li img {
+  padding: 10px;
+}
+
+main header .menu-desktop .top-title .right .wishlist > ul li:hover {
+  background-color: var(--border-color);
+}
+
+main header .menu-desktop .top-title .right .wishlist .show0921 {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+main header .menu-desktop .between-menu {
+  height: 125px;
+  background-color: var(--background-color);
+}
+
+main header .menu-desktop .between-menu .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main header .menu-desktop .between-menu .left img {
+  width: 200px;
+  height: auto;
+  margin-top: 17px;
+}
+
+main header .menu-desktop .between-menu .right .wrap {
+  cursor: pointer;
+  width: 70%;
+  height: 100%;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main header .menu-desktop .between-menu .right .wrap > i {
+  font-size: 40px;
+  color: white;
+}
+
+main header .menu-desktop .between-menu .right .wrap p:nth-child(1) {
+  font-weight: 800;
+  padding-bottom: -5px;
+}
+
+main header .menu-desktop .between-menu .right .wrap p:nth-child(2) {
+  font-size: 13px;
+}
+
+main header .menu-desktop .between-menu .right .wrap p {
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-top: 0px;
+  margin-bottom: 3px;
+}
+
+main header .menu-desktop .between-menu .right .wrap p:hover {
+  color: var(--secondary-color);
+}
+
+main header .menu-desktop .between-menu .between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main header .menu-desktop .between-menu .between form {
+  width: 100%;
+  position: relative;
+}
+
+main header .menu-desktop .between-menu .between form input {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 35px;
+  padding-left: 30px;
+  padding-right: 50px;
+}
+
+main header .menu-desktop .between-menu .between form button {
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 25px;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+main header .menu-desktop .between-menu .left, main header .menu-desktop .between-menu .right, main header .menu-desktop .between-menu .between {
+  height: 125px;
+}
+
+main header .menu-desktop .bottom-option {
+  background-color: var(--secondary-background-color);
+}
+
+main header .menu-desktop .bottom-option .wrap-categories {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 60px;
+  grid-gap: 10px;
+}
+
+main header .menu-desktop .bottom-option .wrap-categories .categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+}
+
+main header .menu-desktop .bottom-option .wrap-categories a {
+  display: contents;
+  text-decoration: none;
+  color: white;
+}
+
+main header .menu-desktop .bottom-option .wrap-categories .go {
+  font-size: 14px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main header .menu-desktop .bottom-option .wrap-categories .go img {
+  margin-right: 10px;
+}
+
+main header .menu-desktop .bottom-option .wrap-categories .go:hover {
+  background-color: var(--secondary-color);
+}
+
+main header .menu-desktop .bottom-option .wrap-categories > div:nth-child(1) {
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+main header .menu-desktop .bottom-option .wrap-categories .cart {
+  position: relative;
+}
+
+main header .menu-desktop .bottom-option .wrap-categories .cart .cart-gap {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 85px;
+  height: 80px;
+  background-color: var(--secondary-color);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+main header .menu-desktop .bottom-option .wrap-categories .cart .cart-gap i {
+  font-size: 40px;
+}
+
+main header .menu-desktop .bottom-option .wrap-categories .cart .cart-gap p {
+  font-size: 12px;
+}
+
+main header .menu-desktop .bottom-option .wrap-categories .cart .list-cart {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  z-index: 1;
+  width: 290px;
+  height: 170px;
+  background-color: var(--background-color);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  overflow: hidden;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main header .menu-desktop .bottom-option .wrap-categories .cart .hidden {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
 }
 /*# sourceMappingURL=index.css.map */
