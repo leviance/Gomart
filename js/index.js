@@ -29,6 +29,35 @@ var list_cart = document.getElementById('p31121241');
 // end effect for register
 
 
+// effect for big slide top
+function slide_move(){
+  var img1 = document.querySelector('.d111351'), img2 = document.querySelector('.d111352');
+  var button = document.querySelectorAll('.big-slide-top .button-slide .button');
+  img1.classList.toggle('hidden');
+  img2.classList.toggle('hidden');
+  button[0].classList.toggle('active');
+  button[1].classList.toggle('active');
+}
+
+setInterval(() => {
+  var img1 = document.querySelector('.d111351'), img2 = document.querySelector('.d111352');
+  var button = document.querySelectorAll('.big-slide-top .button-slide .button');
+  img1.classList.toggle('hidden');
+  img2.classList.toggle('hidden');
+  button[0].classList.toggle('active');
+  button[1].classList.toggle('active');
+}, 7000);
+
+// end effect for big slide top
+
+// effect for menu list categories
+function drop_list_categories(){
+  var list_categories = document.querySelector('.wrap-list-categories');
+  list_categories.classList.toggle('hidden');
+}
+// end effect for menu list categories
+
+
 window.onclick = function(event) {
   if (!event.target.matches('.t123')&&!event.target.matches('.t124')) {
    drop_choose1.classList.add('show0921');
