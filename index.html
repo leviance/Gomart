@@ -19,7 +19,9 @@
     <div class="preload" style="visibility: hidden;">
       <img src="https://innovatory.in/theme/prestashop/Gomart/themes/IT1009/assets/img/preloader.gif" alt="">
     </div>
-
+    <!-- 
+      
+     -->
     <main>
       <header>
         <!-- menu for computer -->
@@ -81,21 +83,62 @@
           </div>
           <div class="bottom-option d-none d-lg-block container-fluid">
             <div class="wrap-categories container">
-                <div class="categories"><i style="padding-right: 20px;" class="fa fa-bars" aria-hidden="true"></i>TOP CATEGORIES
-                  <ul class="list-categories">
-                    <a href=""><li>Home</li></a>
-                    <a href=""><li>Frozen  Item <i class="fas fa-chevron-right"></i></li></a>
-                    <a href=""><li>Fruit & veges <i class="fas fa-chevron-right"></i></li></a>
-                    <a href=""><li>Oils & Gheee <i class="fas fa-chevron-right"></i></li></a>
-                    <a href=""><li>Herbs</li></a>
-                    <a href=""><li>Cola cola</li></a>
-                    <a href=""><li>Mustard Oils</li></a>
-                    <a href=""><li>Beverages</li></a>
-                    <a href=""><li>Seeds & Nuts</li></a>
-                    <a href=""><li>Toned Milk</li></a>
-                    <a><li>More Categories <i class="fas fa-plus"></i></li></a>
-                   
-                  </ul>
+                <div class="categories" onclick="drop_list_categories()"><i style="padding-right: 20px;" class="fa fa-bars" aria-hidden="true"></i>TOP CATEGORIES
+                  <div class="wrap-list-categories">
+                    <ul class="list-categories">
+                      <a href=""><li>Home</li></a>
+                      <a href="" class="Frozen-item"><li>Frozen  Item <i class="fas fa-chevron-right"></i></li></a>
+                      <a href="" class="fruit-veges"><li>Fruit & veges <i class="fas fa-chevron-right"></i></li></a>
+                      <a href=""><li>Oils & Gheee <i class="fas fa-chevron-right"></i></li></a>
+                      <a href=""><li>Herbs</li></a>
+                      <a href=""><li>Cola cola</li></a>
+                      <a href=""><li>Mustard Oils</li></a>
+                      <a href=""><li>Beverages</li></a>
+                      <a href=""><li>Seeds & Nuts</li></a>
+                      <a href=""><li>Toned Milk</li></a>
+                      <a href=""><li>Cheese</li></a>
+                    </ul>
+                  </div>
+                  <!-- hover for frozen item -->
+                  <div class="frozen-item-list on-hover">
+                    <a href="">Jam</a>
+                    <a href="">Herbs</a>
+                    <a href="">Seet nd Nuts</a>
+                    <a href="">Dry Food</a>
+                    <a href="">Grain Food</a>
+                  </div>
+                  <!-- end hover for frozen item -->
+                  <!-- hover for fruit & veges -->
+                  <div class="fruit-veges-list on-hover">
+                    <div class="one-col-inner">
+                      <a href="" class="title">Frozen Items</a>
+                      <p><a href="">Herbs</a></p>
+                      <p><a href="">Oils & Gheee</a></p>
+                      <p><a href="">Pepsi</a></p>
+                      <p><a href="">Mustard Oils</a></p>
+                      <p><a href="">Herbs</a></p>
+                    </div>
+                    <div class="one-col-inner">
+                      <a href="" class="title">Beverages</a>
+                      <p><a href="">Oils & Gheee</a></p>
+                      <p><a href="">Cola cola</a></p>
+                      <p><a href="">Red Bull</a></p>
+                      <p><a href="">Health Oils</a></p>
+                      <p><a href="">Cup Noodles</a></p>
+                    </div>
+                    <div class="one-col-inner">
+                      <a href="" class="title">Oils & Gheee</a>
+                      <p><a href="">Mustard Oils</a></p>
+                      <p><a href="">Soyabean Oils</a></p>
+                      <p><a href="">Potato Chips</a></p>
+                      <p><a href="">Jam</a></p>
+                      <p><a href="">Herbs</a></p>
+                    </div>
+                    <div class="one-col-inner"><a href=""><img src="https://innovatory.in/theme/prestashop/Gomart/modules/itvegamenu/views/img/menu-banner-1.jpg" alt=""></a></div>
+                  </div>
+                  <!-- end hover for fruit & veges -->
+                  <!-- hover for Oils & Gheee -->
+                  <!-- end hover for Oils & Gheee -->
                 </div>
                 <a href=""><div class="categories go"><img src="https://innovatory.in/theme/prestashop/Gomart/modules/itmegamenu/views/img/icons/a7be6f821292cddce141ab8599b1ed11221a4dff_icon-1.png" alt="">BEVERAGES</div></a>
                 <a href=""><div class="categories go"><img src="https://innovatory.in/theme/prestashop/Gomart/modules/itmegamenu/views/img/icons/f2fcda44dbf91743d28190b0009bcc62d792aaf5_icon-2.png" alt="">DRY FOOD</div></a>
@@ -123,14 +166,21 @@
         
       <section>
         <div class="big-slide-top">
-          <a href=""><img src="img/itslider-2.jpg" alt=""></a>
-          <a href=""><img src="img/itslider.jpg" alt=""></a>
+          <a class="d111351" href=""><img src="img/itslider-2.jpg" alt=""></a>
+          <a class="d111352 hidden" href=""><img src="img/itslider.jpg" alt=""></a>
+          <div class="button-slide">
+            <div class="button active" onclick="slide_move()"></div>
+            <div class="button" onclick="slide_move()"></div>
+          </div>
+          <div class="region-hover-mouse-left" onclick="slide_move()"></div>
+          <div class="region-hover-mouse-right" onclick="slide_move()"></div>
         </div>
       </section>
       <footer></footer>
     </main>
+    <!-- 
 
-
+     -->
     <div class="popup-news-letter container-fluid" style="visibility: hidden;">
       <form action="" method="POST" >
         <div style="width: 300px; min-height: 100px; text-align: center;">sletter
@@ -142,5 +192,8 @@
 
     <!-- my script -->
     <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/myjquery.js"></script>
   </body>
 </html>
+
