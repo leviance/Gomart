@@ -46,4 +46,11 @@ $(function() {
     $('.fruit-veges-list').addClass('on-hover');
   }
 );
+
+  $('.oils-ghee-list, .oils-ghee').hover(function () {
+    $('.oils-ghee-list').removeClass('on-hover');
+  }, function () {
+    $('.oils-ghee-list').addClass('on-hover');
+  }
+);
 // end hover for list categories
