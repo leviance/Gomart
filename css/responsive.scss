@@ -1,0 +1,37 @@
+/* ----col-xl----- Màng hình laptop hoặc desktop lớn*/
+@media (min-width: 1200px) {
+    
+  }
+  
+  /* ----col-lg----- Màng hình máy tính bảng lớn hoặc máy tính màng hình trung bình */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    
+  }
+  
+  /* ----col-md----- Màng hình máy tính bảng nhỏ hoặc máy tính màng hình nhỏ */
+  @media (max-width: 991px) {
+		header{
+			.between-menu{
+				height: 70px !important;
+				position: relative;
+				.container{
+					width: 100% !important;
+					.between{
+						width: 100% !important;
+						height: auto !important;
+						position: absolute; left: 0; top: 10px;
+					}
+				}
+			}
+		}
+  }
+  
+  /* ----col-sm----- Màng hình máy tính bảng rất nhỏ hoặc điện thoại di động */
+  @media (max-width: 767px) {
+    
+  }
+  
+  /* ----col-xs----- Điện thoại di động hoặc màng hình cực nhỏ */
+  @media (max-width: 480px) {
+    
+  }

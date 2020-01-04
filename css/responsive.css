@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* ----col-xl----- Màng hình laptop hoặc desktop lớn*/
+/* ----col-lg----- Màng hình máy tính bảng lớn hoặc máy tính màng hình trung bình */
+/* ----col-md----- Màng hình máy tính bảng nhỏ hoặc máy tính màng hình nhỏ */
+@media (max-width: 991px) {
+  header .between-menu {
+    height: 70px !important;
+    position: relative;
+  }
+  header .between-menu .container {
+    width: 100% !important;
+  }
+  header .between-menu .container .between {
+    width: 100% !important;
+    height: auto !important;
+    position: absolute;
+    left: 0;
+    top: 10px;
+  }
+}
+
+/* ----col-sm----- Màng hình máy tính bảng rất nhỏ hoặc điện thoại di động */
+/* ----col-xs----- Điện thoại di động hoặc màng hình cực nhỏ */
+/*# sourceMappingURL=responsive.css.map */

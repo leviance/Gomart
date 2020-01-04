@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- my css -->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- my fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
     <!-- fontawesome 5 -->
@@ -53,7 +54,89 @@
             </div>
           </div>
           <!-- menu for mobile -->
-          <div class="top-title-mobile d-block d-lg-none"></div>
+          <div class="top-title-mobile d-block d-lg-none container-fluid">
+            <div class="wrap">
+              <div class="menu-bar"><i onclick="menu_hidden_left_show()" class="fas fa-bars"></i>
+                <!-- menu hidden left -->
+                <div class="menu-hidden-left go-left">
+                  <div class="top">
+                    <i class="fas fa-user-circle"></i>
+                    <i onclick="menu_hidden_left_hidden()" class="fas fa-times"></i>
+                    <a href="" class="login">Login</a>
+                    <a href="" class="register">Register</a>
+                  </div>
+                  <div class="wrap-menu">
+                    <div class="father-menu">
+                      <ul class="menu">
+                        <li onclick="menu_hidden_left_zoom_out()" class="title"><i class="fas fa-bars"></i> Menu</li>
+                        <a href=""><li>Beverages</li></a>
+                        <a href=""><li>Dry Food</li></a>
+                        <a href=""><li>Grain Food</li></a>
+                        <a href=""><li>Organic</li></a>
+                        <a href=""><li>Baby  Food</li></a>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="wrap-menu menu_2">
+                    <div class="father-menu zoom-out">
+                      <ul class="menu">
+                        <li onclick="menu_hidden_left_zoom_out()" class="title"><i class="fas fa-bars"></i> Categories</li>
+                        <a href=""><li>Home</li></a>
+                        <a href=""><li>Frozen  Item</li></a>
+                        <a href=""><li>Fruit & veges</li></a>
+                        <a href=""><li>Oils & Gheee</li></a>
+                        <a href=""><li>Herbs</li></a>
+                        <a href=""><li>Cola cola</li></a>
+                        <a href=""><li>Mustard Oils</li></a>
+                        <a href=""><li>Beverages</li></a>
+                        <a href=""><li>Seeds & Nuts</li></a>
+                        <a href=""><li>Toned Milk</li></a>
+                        <a href=""><li>Cheese</li></a>
+                        <a href=""><li>Toned Milk</li></a>
+                        <a href=""><li>Chicken</li></a>
+                        <a href=""><li>Meat</li></a>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="wrap-setting">
+                    <div class="father-setting zoom-out">
+                      <div class="setting">
+                        <div onclick="settings_zoom_out()" class="title"><i class="fas fa-cog"></i>Settings</div>
+                        <div class="select">
+                          <select name="carlist" form="carform">
+                            <option value="volvo">English</option>
+                            <option value="saab">Deutsch</option>
+                            <option value="opel">Français</option>
+                            <option value="audi">Español</option>
+                            <option value="audi">Italiano</option>
+                          </select>
+                          <select name="carlist" form="carform">
+                            <option value="volvo">USD $</option>
+                            <option value="saab">EUR €</option>
+                          </select>
+                          <select name="carlist" form="carform">
+                            <option value="volvo">Wishlist (0)</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                </div>
+                <div onclick="menu_hidden_left_hidden()" class="background-black hidden-back-ground-black"></div>
+                <!-- end menu hidden left -->
+              </div>
+            <div class="main-icon"><a href=""><img src="https://innovatory.in/theme/prestashop/Gomart/img/demo-shop-logo-1557119198.jpg" alt=""></a></div>
+            <div class="cart-mobile"><i class="fab fa-opencart" onclick="show_cart_mobile()"></i>
+              <div class="list-cart-mobile hidden kaksfvhnjksnd" id="a14235">
+                <i class="fas fa-shopping-bag"></i>
+                <p>No produce in this cart</p>
+              </div>
+            </div>
+            </div>
+          </div>
           <!-- and menu for mobile -->
           <div class="between-menu container-fluid">
             <div class="container">
@@ -89,7 +172,7 @@
                       <a href=""><li>Home</li></a>
                       <a href="" class="Frozen-item"><li>Frozen  Item <i class="fas fa-chevron-right"></i></li></a>
                       <a href="" class="fruit-veges"><li>Fruit & veges <i class="fas fa-chevron-right"></i></li></a>
-                      <a href=""><li>Oils & Gheee <i class="fas fa-chevron-right"></i></li></a>
+                      <a href="" class="oils-ghee"><li>Oils & Gheee <i class="fas fa-chevron-right"></i></li></a>
                       <a href=""><li>Herbs</li></a>
                       <a href=""><li>Cola cola</li></a>
                       <a href=""><li>Mustard Oils</li></a>
@@ -138,6 +221,46 @@
                   </div>
                   <!-- end hover for fruit & veges -->
                   <!-- hover for Oils & Gheee -->
+                  <div class="oils-ghee-list on-hover">
+                    <div class="text-top">
+                      <div class="one-col-inner">
+                        <a href="" class="title">Frozen Items</a>
+                        <p><a href="">Herbs</a></p>
+                        <p><a href="">Oils & Gheee</a></p>
+                        <p><a href="">Pepsi</a></p>
+                        <p><a href="">Mustard Oils</a></p>
+                        <p><a href="">Herbs</a></p>
+                      </div>
+                      <div class="one-col-inner">
+                        <a href="" class="title">Beverages</a>
+                        <p><a href="">Oils & Gheee</a></p>
+                        <p><a href="">Cola cola</a></p>
+                        <p><a href="">Red Bull</a></p>
+                        <p><a href="">Health Oils</a></p>
+                        <p><a href="">Cup Noodles</a></p>
+                      </div>
+                      <div class="one-col-inner">
+                        <a href="" class="title">Oils & Gheee</a>
+                        <p><a href="">Mustard Oils</a></p>
+                        <p><a href="">Soyabean Oils</a></p>
+                        <p><a href="">Potato Chips</a></p>
+                        <p><a href="">Jam</a></p>
+                        <p><a href="">Herbs</a></p>
+                      </div>
+                      <div class="one-col-inner">
+                        <a href="" class="title">Oils & Gheee</a>
+                        <p><a href="">Mustard Oils</a></p>
+                        <p><a href="">Soyabean Oils</a></p>
+                        <p><a href="">Potato Chips</a></p>
+                        <p><a href="">Jam</a></p>
+                        <p><a href="">Herbs</a></p>
+                      </div>
+                    </div>
+                    <div class="img-bottom">
+                      <a href=""><img src="https://innovatory.in/theme/prestashop/Gomart/modules/itvegamenu/views/img/menu-banner-2.jpg" alt=""></a>
+                      <a href=""><img src="https://innovatory.in/theme/prestashop/Gomart/modules/itvegamenu/views/img/menu-banner-3.jpg" alt=""></a>
+                    </div>
+                  </div>
                   <!-- end hover for Oils & Gheee -->
                 </div>
                 <a href=""><div class="categories go"><img src="https://innovatory.in/theme/prestashop/Gomart/modules/itmegamenu/views/img/icons/a7be6f821292cddce141ab8599b1ed11221a4dff_icon-1.png" alt="">BEVERAGES</div></a>

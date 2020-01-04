@@ -58,6 +58,43 @@ function drop_list_categories(){
 // end effect for menu list categories
 
 
+// effect show cart-mobile
+var cart_mobile = document.getElementById('a14235');
+  function show_cart_mobile(){
+    cart_mobile.classList.toggle('hidden');
+  }
+// end effect show cart-mobile
+
+// when menu mobile hidden left hidden
+
+function menu_hidden_left_show(){
+  var menu = document.querySelector('.top-title-mobile .wrap .menu-bar .menu-hidden-left')
+  var background_black = document.querySelector('.top-title-mobile .wrap .menu-bar .background-black')
+  menu.classList.remove('go-left');
+  background_black.classList.remove('hidden-back-ground-black');
+}
+
+function menu_hidden_left_hidden(){
+  var menu = document.querySelector('.top-title-mobile .wrap .menu-bar .menu-hidden-left')
+  var background_black = document.querySelector('.top-title-mobile .wrap .menu-bar .background-black')
+  menu.classList.add('go-left');
+  background_black.classList.add('hidden-back-ground-black');
+}
+
+function menu_hidden_left_zoom_out(){
+  var menu = document.querySelector('.menu-hidden-left .wrap-menu .father-menu');
+  var categories = document.querySelector('.menu-hidden-left .menu_2 .father-menu')
+  menu.classList.toggle('zoom-out');
+  categories.classList.toggle('zoom-out');
+}
+
+function settings_zoom_out(){
+  var setting = document.querySelector('.menu-hidden-left .wrap-setting .father-setting');
+  setting.classList.toggle('zoom-out');
+}
+
+// end effect for menu mobile  hidden left
+
 window.onclick = function(event) {
   if (!event.target.matches('.t123')&&!event.target.matches('.t124')) {
    drop_choose1.classList.add('show0921');
@@ -69,6 +106,11 @@ window.onclick = function(event) {
   else{
     list_cart.classList.add('hidden');
   }
+  // for cart mobile
+  if(!event.target.matches('.cart-mobile i')&&!event.target.matches('.list-cart-mobile p')){
+    cart_mobile.classList.add('hidden');
+  }
+  // end for cart mobile
 }
   
 
