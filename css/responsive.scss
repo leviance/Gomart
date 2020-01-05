@@ -28,7 +28,30 @@
   
   /* ----col-sm----- Màng hình máy tính bảng rất nhỏ hoặc điện thoại di động */
   @media (max-width: 767px) {
-    
+    section{
+			.Imgslide{
+				.img-banner{
+					grid-template-columns: 1fr !important;
+					width: 100%;
+					padding-left: 20px;
+					padding-right: 20px;
+					>div{
+						width: 100% !important;
+						transform: none !important;
+						img{
+							width: 100% !important;
+							transform: none !important;
+						}
+					}
+					>div:nth-child(2){
+						margin-top: 20px;
+					}
+				}
+			}
+			.top-categories{
+				
+			}
+		}
   }
   
   /* ----col-xs----- Điện thoại di động hoặc màng hình cực nhỏ */
