@@ -15,14 +15,15 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
     <!-- fontawesome 5 -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="./js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="./js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
   </head>
   <body>
-    <div class="preload" style="visibility: hidden;">
+    <div id="loading-modal" class="preload">
       <img src="https://innovatory.in/theme/prestashop/Gomart/themes/IT1009/assets/img/preloader.gif" alt="">
     </div>
-    <!-- 
-      
-     -->
+    <!-- -->
     <main>
       <header>
         <!-- menu for computer -->
@@ -286,7 +287,6 @@
         <div class="menu-mobile d-block d-lg-none"></div>
         <!-- end menu for mobile -->
       </header>
-        
       <section>
         <div class="Imgslide">
           <div class="big-slide-top">
@@ -311,14 +311,917 @@
         </div>
         </div>
         <div class="top-categories container">
-          <div class="title">TOP CATEGORIES</div>
+          <div class="title-products">
+            <h3>TOP CATEGORIES</h3>
+          </div>
+          <div class="main container">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="content">
+                  <a href="">
+                    <div class="content-top">
+                      <div class="right"><img src="img/top1.jpg" alt=""></div>
+                      <div class="left"><p class="name-item">Herbs</p></div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="content-bottom">
+                      <div class="right"><img src="img/top2.jpg" alt=""></div>
+                      <div class="left"><p class="name-item">Seeds & Nuts</p></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="content">
+                  <a href="">
+                    <div class="content-top">
+                      <div class="right"><img src="img/top3.jpg" alt=""></div>
+                      <div class="left"><p class="name-item">Herbs</p></div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="content-bottom">
+                      <div class="right"><img src="img/top4.jpg" alt=""></div>
+                      <div class="left"><p class="name-item">Seeds & Nuts</p></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="content">
+                  <a href="">
+                    <div class="content-top">
+                      <div class="right"><img src="img/top5.jpg" alt=""></div>
+                      <div class="left"><p class="name-item">Herbs</p></div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="content-bottom">
+                      <div class="right"><img src="img/top6.jpg" alt=""></div>
+                      <div class="left"><p class="name-item">Seeds & Nuts</p></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="content">
+                  <a href="">
+                    <div class="content-top">
+                      <div class="right"><img src="img/top7.jpg" alt=""></div>
+                      <div class="left"><p class="name-item">Herbs</p></div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="content-bottom">
+                      <div class="right"><img src="img/top8.jpg" alt=""></div>
+                      <div class="left"><p class="name-item">Seeds & Nuts</p></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="content">
+                  <a href="">
+                    <div class="content-top">
+                      <div class="right"><img src="img/top9.jpg" alt=""></div>
+                      <div class="left"><p class="name-item">Herbs</p></div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="content-bottom">
+                      <div class="right"><img src="img/top10.jpg" alt=""></div>
+                      <div class="left"><p class="name-item">Seeds & Nuts</p></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="trending-products container">
+          <div class="title-products">
+            <h3>TRENDING PRODUCTS</h3>
+          </div>
+          <div class="product-types">
+            <ul>
+              <li class="active">New Products</li>|
+              <li>Featured Products</li>|
+              <li>Best Seller</li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="banner-left col-4 d-none d-lg-block">
+              <a href="">
+                <img src="img/product-banner-1.jpg" alt="">
+              </a>
+            </div>
+            <div class="slide-trending-products col-lg-8">
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <div class="content">
+                    <div class="product-top">
+                      <a href="" class="product-img">
+                        <img src="img/trending2.jpg" alt="" class="conver-img">
+                        <img src="img/trending1.jpg" alt="" class="hover-img">
+                      </a>
+                      <div class="infor-product">
+                        <h2 class="product-name">Adobe plugin</h2>
+                        <div class="detail">
+                          <span class="price">$21.25</span>
+                          <span class="old-price">$25.00</span>
+                        </div>
+                      </div>
+                      <div id="product-review">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <div class="status-product">New</div>
+                      <div class="discount">-15%</div>
+                      <div class="list-action">
+                        <div class="add-to-cart">
+                          <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="view-product" title="View product">
+                          <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="add-to-wishlist">
+                          <i class="far fa-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-bottom">
+                      <a href="" class="product-img">
+                        <img src="img/trending15.jpg" alt="" class="conver-img">
+                        <img src="img/trending16.jpg" alt="" class="hover-img">
+                      </a>
+                      <div class="infor-product">
+                        <h2 class="product-name">Adobe plugin</h2>
+                        <div class="detail">
+                          <span class="price">$21.25</span>
+                          <span class="old-price">$25.00</span>
+                        </div>
+                      </div>
+                      <div id="product-review">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <div class="status-product">New</div>
+                      <div class="discount">-15%</div>
+                      <div class="list-action">
+                        <div class="add-to-cart">
+                          <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="view-product" title="View product">
+                          <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="add-to-wishlist">
+                          <i class="far fa-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="content">
+                    <div class="product-top">
+                      <a href="" class="product-img">
+                        <img src="img/trending3.jpg" alt="" class="conver-img">
+                        <img src="img/trending4.jpg" alt="" class="hover-img">
+                      </a>
+                      <div class="infor-product">
+                        <h2 class="product-name">Adobe plugin</h2>
+                        <div class="detail">
+                          <span class="price">$21.25</span>
+                          <span class="old-price">$25.00</span>
+                        </div>
+                      </div>
+                      <div id="product-review">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <div class="status-product">New</div>
+                      <div class="discount">-15%</div>
+                      <div class="list-action">
+                        <div class="add-to-cart">
+                          <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="view-product" title="View product">
+                          <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="add-to-wishlist">
+                          <i class="far fa-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-bottom">
+                      <a href="" class="product-img">
+                        <img src="img/trending5.jpg" alt="" class="conver-img">
+                        <img src="img/trending6.jpg" alt="" class="hover-img">
+                      </a>
+                      <div class="infor-product">
+                        <h2 class="product-name">Adobe plugin</h2>
+                        <div class="detail">
+                          <span class="price">$21.25</span>
+                          <span class="old-price">$25.00</span>
+                        </div>
+                      </div>
+                      <div id="product-review">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <div class="status-product">New</div>
+                      <div class="discount">-15%</div>
+                      <div class="list-action">
+                        <div class="add-to-cart">
+                          <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="view-product" title="View product">
+                          <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="add-to-wishlist">
+                          <i class="far fa-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+                <div class="item">
+                  <div class="content">
+                    <div class="product-top">
+                      <a href="" class="product-img">
+                        <img src="img/trending7.jpg" alt="" class="conver-img">
+                        <img src="img/trending8.jpg" alt="" class="hover-img">
+                      </a>
+                      <div class="infor-product">
+                        <h2 class="product-name">Adobe plugin</h2>
+                        <div class="detail">
+                          <span class="price">$21.25</span>
+                          <span class="old-price">$25.00</span>
+                        </div>
+                      </div>
+                      <div id="product-review">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <div class="status-product">New</div>
+                      <div class="discount">-15%</div>
+                      <div class="list-action">
+                        <div class="add-to-cart">
+                          <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="view-product" title="View product">
+                          <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="add-to-wishlist">
+                          <i class="far fa-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-bottom">
+                      <a href="" class="product-img">
+                        <img src="img/trending9.jpg" alt="" class="conver-img">
+                        <img src="img/trending10.jpg" alt="" class="hover-img">
+                      </a>
+                      <div class="infor-product">
+                        <h2 class="product-name">Adobe plugin</h2>
+                        <div class="detail">
+                          <span class="price">$21.25</span>
+                          <span class="old-price">$25.00</span>
+                        </div>
+                      </div>
+                      <div id="product-review">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <div class="status-product">New</div>
+                      <div class="discount">-15%</div>
+                      <div class="list-action">
+                        <div class="add-to-cart">
+                          <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="view-product" title="View product">
+                          <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="add-to-wishlist">
+                          <i class="far fa-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="content">
+                    <div class="product-top">
+                      <a href="" class="product-img">
+                        <img src="img/trending11.jpg" alt="" class="conver-img">
+                        <img src="img/trending12.jpg" alt="" class="hover-img">
+                      </a>
+                      <div class="infor-product">
+                        <h2 class="product-name">Adobe plugin</h2>
+                        <div class="detail">
+                          <span class="price">$21.25</span>
+                          <span class="old-price">$25.00</span>
+                        </div>
+                      </div>
+                      <div id="product-review">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <div class="status-product">New</div>
+                      <div class="discount">-15%</div>
+                      <div class="list-action">
+                        <div class="add-to-cart">
+                          <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="view-product" title="View product">
+                          <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="add-to-wishlist">
+                          <i class="far fa-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-bottom">
+                      <a href="" class="product-img">
+                        <img src="img/trending13.jpg" alt="" class="conver-img">
+                        <img src="img/trending14.jpg" alt="" class="hover-img">
+                      </a>
+                      <div class="infor-product">
+                        <h2 class="product-name">Adobe plugin</h2>
+                        <div class="detail">
+                          <span class="price">$21.25</span>
+                          <span class="old-price">$25.00</span>
+                        </div>
+                      </div>
+                      <div id="product-review">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <div class="status-product">New</div>
+                      <div class="discount">-15%</div>
+                      <div class="list-action">
+                        <div class="add-to-cart">
+                          <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="view-product" title="View product">
+                          <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="add-to-wishlist">
+                          <i class="far fa-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-banner container">
+            <div class="banner-left"><a href=""><img src="img/list-banner-1.jpg" alt=""></a></div>
+            <div class="banner-right">
+              <div class="banner-right-top">
+                <div><a href=""><img src="img/list-banner-2.jpg" alt=""></a></div>
+                <div><a href=""><img src="img/list-banner-3.jpg" alt=""></a></div>
+              </div>
+              <div class="banner-right-bottom">
+                <div><a href=""><img src="img/list-banner-4.jpg" alt=""></a></div>
+                <div><a href=""><img src="img/list-banner-5.jpg" alt=""></a></div>
+                <div><a href=""><img src="img/list-banner-6.jpg" alt=""></a></div>
+              </div>
+            </div>
+        </div>
+        <div class="special-product trending-products container">
+          <div class="title-products">
+            <h3>SPECIALS PRODUCTS</h3>
+          </div>
+          <div class="row">
+            <div class="slide-trending-products col-lg-8">
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <div class="content">
+                    <div class="product-top">
+                      <a href="" class="product-img">
+                        <img src="img/trending2.jpg" alt="" class="conver-img">
+                        <img src="img/trending1.jpg" alt="" class="hover-img">
+                      </a>
+                      <div class="infor-product">
+                        <h2 class="product-name">Adobe plugin</h2>
+                        <div class="detail">
+                          <span class="price">$21.25</span>
+                          <span class="old-price">$25.00</span>
+                        </div>
+                      </div>
+                      <div id="product-review">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <div class="status-product">New</div>
+                      <div class="discount">-15%</div>
+                      <div class="list-action">
+                        <div class="add-to-cart">
+                          <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="view-product" title="View product">
+                          <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="add-to-wishlist">
+                          <i class="far fa-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-bottom">
+                      <a href="" class="product-img">
+                        <img src="img/trending15.jpg" alt="" class="conver-img">
+                        <img src="img/trending16.jpg" alt="" class="hover-img">
+                      </a>
+                      <div class="infor-product">
+                        <h2 class="product-name">Adobe plugin</h2>
+                        <div class="detail">
+                          <span class="price">$21.25</span>
+                          <span class="old-price">$25.00</span>
+                        </div>
+                      </div>
+                      <div id="product-review">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <div class="status-product">New</div>
+                      <div class="discount">-15%</div>
+                      <div class="list-action">
+                        <div class="add-to-cart">
+                          <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="view-product" title="View product">
+                          <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="add-to-wishlist">
+                          <i class="far fa-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="content">
+                    <div class="product-top">
+                      <a href="" class="product-img">
+                        <img src="img/trending3.jpg" alt="" class="conver-img">
+                        <img src="img/trending4.jpg" alt="" class="hover-img">
+                      </a>
+                      <div class="infor-product">
+                        <h2 class="product-name">Adobe plugin</h2>
+                        <div class="detail">
+                          <span class="price">$21.25</span>
+                          <span class="old-price">$25.00</span>
+                        </div>
+                      </div>
+                      <div id="product-review">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <div class="status-product">New</div>
+                      <div class="discount">-15%</div>
+                      <div class="list-action">
+                        <div class="add-to-cart">
+                          <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="view-product" title="View product">
+                          <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="add-to-wishlist">
+                          <i class="far fa-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-bottom">
+                      <a href="" class="product-img">
+                        <img src="img/trending5.jpg" alt="" class="conver-img">
+                        <img src="img/trending6.jpg" alt="" class="hover-img">
+                      </a>
+                      <div class="infor-product">
+                        <h2 class="product-name">Adobe plugin</h2>
+                        <div class="detail">
+                          <span class="price">$21.25</span>
+                          <span class="old-price">$25.00</span>
+                        </div>
+                      </div>
+                      <div id="product-review">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <div class="status-product">New</div>
+                      <div class="discount">-15%</div>
+                      <div class="list-action">
+                        <div class="add-to-cart">
+                          <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="view-product" title="View product">
+                          <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="add-to-wishlist">
+                          <i class="far fa-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+                <div class="item">
+                  <div class="content">
+                    <div class="product-top">
+                      <a href="" class="product-img">
+                        <img src="img/trending7.jpg" alt="" class="conver-img">
+                        <img src="img/trending8.jpg" alt="" class="hover-img">
+                      </a>
+                      <div class="infor-product">
+                        <h2 class="product-name">Adobe plugin</h2>
+                        <div class="detail">
+                          <span class="price">$21.25</span>
+                          <span class="old-price">$25.00</span>
+                        </div>
+                      </div>
+                      <div id="product-review">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <div class="status-product">New</div>
+                      <div class="discount">-15%</div>
+                      <div class="list-action">
+                        <div class="add-to-cart">
+                          <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="view-product" title="View product">
+                          <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="add-to-wishlist">
+                          <i class="far fa-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-bottom">
+                      <a href="" class="product-img">
+                        <img src="img/trending9.jpg" alt="" class="conver-img">
+                        <img src="img/trending10.jpg" alt="" class="hover-img">
+                      </a>
+                      <div class="infor-product">
+                        <h2 class="product-name">Adobe plugin</h2>
+                        <div class="detail">
+                          <span class="price">$21.25</span>
+                          <span class="old-price">$25.00</span>
+                        </div>
+                      </div>
+                      <div id="product-review">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <div class="status-product">New</div>
+                      <div class="discount">-15%</div>
+                      <div class="list-action">
+                        <div class="add-to-cart">
+                          <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="view-product" title="View product">
+                          <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="add-to-wishlist">
+                          <i class="far fa-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="content">
+                    <div class="product-top">
+                      <a href="" class="product-img">
+                        <img src="img/trending11.jpg" alt="" class="conver-img">
+                        <img src="img/trending12.jpg" alt="" class="hover-img">
+                      </a>
+                      <div class="infor-product">
+                        <h2 class="product-name">Adobe plugin</h2>
+                        <div class="detail">
+                          <span class="price">$21.25</span>
+                          <span class="old-price">$25.00</span>
+                        </div>
+                      </div>
+                      <div id="product-review">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <div class="status-product">New</div>
+                      <div class="discount">-15%</div>
+                      <div class="list-action">
+                        <div class="add-to-cart">
+                          <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="view-product" title="View product">
+                          <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="add-to-wishlist">
+                          <i class="far fa-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-bottom">
+                      <a href="" class="product-img">
+                        <img src="img/trending13.jpg" alt="" class="conver-img">
+                        <img src="img/trending14.jpg" alt="" class="hover-img">
+                      </a>
+                      <div class="infor-product">
+                        <h2 class="product-name">Adobe plugin</h2>
+                        <div class="detail">
+                          <span class="price">$21.25</span>
+                          <span class="old-price">$25.00</span>
+                        </div>
+                      </div>
+                      <div id="product-review">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <div class="status-product">New</div>
+                      <div class="discount">-15%</div>
+                      <div class="list-action">
+                        <div class="add-to-cart">
+                          <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="view-product" title="View product">
+                          <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="add-to-wishlist">
+                          <i class="far fa-heart"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="banner-left col-4 d-none d-lg-block">
+              <a href="">
+                <img src="img/special-product.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="discount-banner container">
+          <a href=""><img src="img/disoucnt-banner.png" alt=""></a>
+        </div>
+        <div class="from-the-journal container">
+          <div class="title-products">
+            <h3>SPECIALS PRODUCTS</h3>
+          </div>
+          <div class="slide-journal">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <a href="">
+                  <img src="img/slide-journal.jpg" alt="">
+                  <div class="hover"></div>
+                </a>
+                <div class="action">
+                  <div class="view"><i class="fa fa-search" aria-hidden="true"></i></div>
+                  <div class="link"><a href=""><i class="fa fa-link" aria-hidden="true"></i></a></div>
+                </div>
+                <h5><a href="">Donec tellus Nulla lorem</a></h5>
+                <p>Nascetur ridiculus mus upon of seasons earth dominion. Gathering brought...</p>
+                <a href="" class="read-more">READ MORE</a>
+                <div class="date">23 Apr</div>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img src="img/slide-journal1.jpg" alt="">
+                  <div class="hover"></div>
+                </a>
+                <div class="action">
+                  <div class="view"><i class="fa fa-search" aria-hidden="true"></i></div>
+                  <div class="link"><a href=""><i class="fa fa-link" aria-hidden="true"></i></a></div>
+                </div>
+                <h5><a href="">Donec tellus Nulla lorem</a></h5>
+                <p>Nascetur ridiculus mus upon of seasons earth dominion. Gathering brought...</p>
+                <a href="" class="read-more">READ MORE</a>
+                <div class="date">23 Apr</div>
+            </div>
+            <div class="item">
+              <a href="">
+                <img src="img/slide-journal2.jpg" alt="">
+                <div class="hover"></div>
+              </a>
+              <div class="action">
+                <div class="view"><i class="fa fa-search" aria-hidden="true"></i></div>
+                <div class="link"><a href=""><i class="fa fa-link" aria-hidden="true"></i></a></div>
+              </div>
+              <h5><a href="">Donec tellus Nulla lorem</a></h5>
+              <p>Nascetur ridiculus mus upon of seasons earth dominion. Gathering brought...</p>
+              <a href="" class="read-more">READ MORE</a>
+              <div class="date">23 Apr</div>
+          </div>
+              <div class="item">
+              <a href="">
+                <img src="img/slide-journal3.jpg" alt="">
+                <div class="hover"></div>
+              </a>
+              <div class="action">
+                <div class="view"><i class="fa fa-search" aria-hidden="true"></i></div>
+                <div class="link"><a href=""><i class="fa fa-link" aria-hidden="true"></i></a></div>
+              </div>
+              <h5><a href="">Donec tellus Nulla lorem</a></h5>
+              <p>Nascetur ridiculus mus upon of seasons earth dominion. Gathering brought...</p>
+              <a href="" class="read-more">READ MORE</a>
+              <div class="date">23 Apr</div>
+            </div>
+              <div class="item">
+              <a href="">
+                <img src="img/slide-journal.jpg" alt="">
+                <div class="hover"></div>
+              </a>
+              <div class="action">
+                <div class="view"><i class="fa fa-search" aria-hidden="true"></i></div>
+                <div class="link"><a href=""><i class="fa fa-link" aria-hidden="true"></i></a></div>
+              </div>
+              <h5><a href="">Donec tellus Nulla lorem</a></h5>
+              <p>Nascetur ridiculus mus upon of seasons earth dominion. Gathering brought...</p>
+              <a href="" class="read-more">READ MORE</a>
+              <div class="date">23 Apr</div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="big-banner-bottom container">
+          <div class="wrap-img">
+            <a href="">
+              <img src="img/big-banner-bottom.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="slide-bottom container">
+          <div class="owl-carousel owl-theme">
+            <div class="item"><a href=""><img src="img/slide-bottom1.jpg" alt=""></a></div>
+            <div class="item"><a href=""><img src="img/slide-bottom2.jpg" alt=""></a></div>
+            <div class="item"><a href=""><img src="img/slide-bottom3.jpg" alt=""></a></div>
+            <div class="item"><a href=""><img src="img/slide-bottom4.jpg" alt=""></a></div>
+            <div class="item"><a href=""><img src="img/slide-bottom5.jpg" alt=""></a></div>
+            <div class="item"><a href=""><img src="img/slide-bottom6.jpg" alt=""></a></div>
+            <div class="item"><a href=""><img src="img/slide-bottom1.jpg" alt=""></a></div>
+          </div>
         </div>
       </section>
-      <footer></footer>
+      <footer>
+        <div class="top-footer">
+          <div class="wrap-top-footer container">
+            <div class="wrap-content row">
+              <div class="title col-lg-6">
+                <div class="icon"><i class="far fa-envelope"></i></div>
+                <div class="wrap-text">
+                  <p class="title">SIGN UP FOR NEWSLETTER</p>
+                 <p class="sub-title">To subscribe Our Newsletter & Get coupons.</p>
+                </div>
+              </div>
+              <div class="form-subscribe col-lg-6">
+                <div class="input-wrap">
+                  <input type="email" placeholder="Your email address">
+                </div>
+                <div class="btn-subscribe"><span>Subscribe</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-footer container">
+            <div class="slide-footer">
+              <div class="owl-carousel owl-theme">
+                <div class="item"><div class="content">
+                  <div class="wrap-content">
+                    <div class="icon"><img src="img/befunky_layer1.png" alt=""></div>
+                    <h2 class="title">BEST PRICES & OFFERS</h2>
+                    <ul>
+                      <li><i class="fa fa-check" aria-hidden="true"></i>Get 20% extra</li>
+                      <li><i class="fa fa-check" aria-hidden="true"></i>Exclusive Deal</li>
+                    </ul>
+                  </div>
+                </div></div>
+                <div class="item"><div class="content">
+                  <div class="wrap-content ">
+                    <div class="icon"><img src="img/befunky_layer2.png" alt=""></div>
+                    <h2 class="title">BEST PRICES & OFFERS</h2>
+                    <ul>
+                      <li><i class="fa fa-check" aria-hidden="true"></i>Get 20% extra</li>
+                      <li><i class="fa fa-check" aria-hidden="true"></i>Exclusive Deal</li>
+                    </ul>
+                  </div>
+                </div></div>
+                <div class="item"><div class="content">
+                  <div class="wrap-content ">
+                    <div class="icon"><img src="img/befunky_layer3.png" alt=""></div>
+                    <h2 class="title">BEST PRICES & OFFERS</h2>
+                    <ul>
+                      <li><i class="fa fa-check" aria-hidden="true"></i>Get 20% extra</li>
+                      <li><i class="fa fa-check" aria-hidden="true"></i>Exclusive Deal</li>
+                    </ul>
+                  </div>
+                </div></div>
+                <div class="item"><div class="content">
+                  <div class="wrap-content">
+                    <div class="icon"><img src="img/befunky_layer4.png" alt=""></div>
+                    <h2 class="title">BEST PRICES & OFFERS</h2>
+                    <ul>
+                      <li><i class="fa fa-check" aria-hidden="true"></i>Get 20% extra</li>
+                      <li><i class="fa fa-check" aria-hidden="true"></i>Exclusive Deal</li>
+                    </ul>
+                  </div>
+                </div></div>
+              </div>
+            </div>
+            <div class="bottom-main row">
+              <div class="col-lg-3">
+                <div class="footer-logo">
+                  <div class="logo">
+                    <a href=""><img src="img/footer-logo.png" alt=""></a>
+                  </div>
+                  <p class="store-des">Veniaquisostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                  <ul class="list-icon">
+                    <li class="wrap-icon"><i class="fab fa-facebook-f"></i></li>
+                    <li class="wrap-icon"><i class="fab fa-twitter"></i></li>
+                    <li class="wrap-icon"><i class="fab fa-youtube"></i></li>
+                    <li class="wrap-icon"><i class="fab fa-google-plus-g"></i></li>
+                    <li class="wrap-icon"><i class="fab fa-instagram"></i></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 my-account">
+                
+              </div>
+              <div class="col-lg-2"></div>
+              <div class="col-lg-3"></div>
+            </div>
+        </div>
+        <div class="bottom-footer container">
+          <div class="row">
+            <div class="left col-lg-6">
+              <a href="">© 2020 - Ecommerce software by PrestaShop™</a>
+            </div>
+            <div class="right col-lg-6">
+              <div class="wrap-content">
+                <span>Payment acceptable on</span>
+                <a href=""><img src="img/bottom-footer1.png" alt=""></a>
+                <a href=""><img src="img/bottom-footer2.png" alt=""></a>
+                <a href=""><img src="img/bottom-footer3.png" alt=""></a>
+                <a href=""><img src="img/bottom-footer4.png" alt=""></a>
+                <a href=""><img src="img/bottom-footer5.png" alt=""></a>
+                <a href=""><img src="img/bottom-footer6.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
-    <!-- 
-
-     -->
+    <!-- -->
     <div class="popup-news-letter container-fluid" style="visibility: hidden;">
       <form action="" method="POST" >
         <div style="width: 300px; min-height: 100px; text-align: center;">sletter
@@ -328,9 +1231,12 @@
       </form>
     </div>
 
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <!-- owl carousel -->
+     <script src="js/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
     <!-- my script -->
     <script src="js/index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="js/myjquery.js"></script>
   </body>
 </html>

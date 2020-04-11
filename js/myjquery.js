@@ -54,3 +54,126 @@ $(function() {
   }
 );
 // end hover for list categories
+
+// effect loading modal
+function effectLoading(){
+  $("#loading-modal").hide();
+}
+
+$(document).ready(function(){
+  effectLoading();
+})
+
+$('.top-categories .owl-carousel').owlCarousel({
+  loop:false,
+  margin:30,
+  nav:true,
+  dots: false,
+  autoHeight: true,
+  loop:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      480:{
+          items:2
+      },
+      990:{
+          items:3
+      },
+      1200:{
+          items:4
+      }
+  }
+})
+
+$('.trending-products .owl-carousel').owlCarousel({
+  loop:false,
+  margin:30,
+  nav:true,
+  dots: false,
+  autoHeight: true,
+  loop:true,
+  responsive:{
+    0:{
+      items:2
+    },
+    480:{
+        items:2
+    },
+    750:{
+        items:3
+    },
+    1200:{
+        items:3
+    }
+  }
+})
+
+$('.from-the-journal .owl-carousel').owlCarousel({
+  loop:false,
+  margin:30,
+  nav:true,
+  dots: false,
+  autoHeight: true,
+  responsive:{
+    0:{
+      items:1
+    },
+    765:{
+        items:2
+    },
+    955:{
+        items:3
+    },
+    1200:{
+        items:3
+    }
+  }
+})
+
+$('.slide-bottom .owl-carousel').owlCarousel({
+  loop:false,
+  margin:30,
+  dots: false,
+  autoHeight: true,
+  autoplay: true,
+  autoplayHoverPause: true,
+  responsive:{
+    0:{
+      items:2
+    },
+    480:{
+        items:3
+    },
+    990:{
+        items:4
+    },
+    1200:{
+        items:5
+    }
+  }
+})
+
+$('.main-footer .slide-footer .owl-carousel').owlCarousel({
+  loop:false,
+  margin:30,
+  dots: false,
+  autoHeight: true,
+  autoplayHoverPause: true,
+  loop: true,
+  responsive:{
+    0:{
+      items:2
+    },
+    480:{
+        items:3
+    },
+    990:{
+        items:4
+    },
+    1200:{
+        items:4
+    }
+  }
+})
