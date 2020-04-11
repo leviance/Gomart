@@ -142,6 +142,35 @@
   footer .main-footer {
     margin-top: 30px !important;
   }
+  footer .main-footer .bottom-main .footer-logo {
+    text-align: center;
+  }
+  footer .main-footer .bottom-main .view-list {
+    height: 45px !important;
+    overflow: hidden;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  footer .main-footer .bottom-main .title {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+  footer .main-footer .bottom-main .title i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  footer .main-footer .bottom-main .title .i-rotate {
+    -webkit-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+  }
+  footer .main-footer .bottom-main .contact-us {
+    margin-bottom: 20px;
+  }
   footer .bottom-footer .left {
     text-align: center !important;
     margin-bottom: 10px !important;

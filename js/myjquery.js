@@ -55,15 +55,6 @@ $(function() {
 );
 // end hover for list categories
 
-// effect loading modal
-function effectLoading(){
-  $("#loading-modal").hide();
-}
-
-$(document).ready(function(){
-  effectLoading();
-})
-
 $('.top-categories .owl-carousel').owlCarousel({
   loop:false,
   margin:30,
@@ -176,4 +167,25 @@ $('.main-footer .slide-footer .owl-carousel').owlCarousel({
         items:4
     }
   }
+})
+
+
+//  effect hover bottom main footer
+function effectClickMainFooter(){
+  if ($(window).width() < 991){
+    $("footer .main-footer .bottom-main .title").on("click",function(){
+      $(this).parents(".list-infor").toggleClass("view-list");
+      $(this).find("i").toggleClass("i-rotate");
+    })
+  }
+}
+
+// effect loading modal
+function effectLoading(){
+  $("#loading-modal").hide();
+}
+
+$(document).ready(function(){
+  effectLoading();
+  effectClickMainFooter();
 })

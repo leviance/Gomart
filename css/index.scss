@@ -1250,9 +1250,103 @@ li{list-style: none;}
               height: 35px;
               border-radius: 50%;
               background-color: black;
-              text-align: center;
-              line-height: 35px;
+              transition: 0.4s !important;
+              a{
+                display: block; 
+                width: 100%; 
+                height: 100%; 
+                text-align: center;
+                line-height: 35px;
+              }
               i{color:white;}
+            }
+            li:nth-child(1):hover{
+              border-color: #3b5998;
+              background-color: #3b5998;
+            }
+            li:nth-child(2):hover{
+              border-color: #1da1f2;
+              background-color: #1da1f2;
+            }
+            li:nth-child(3):hover{
+              border-color: #c4302b;
+              background-color: #c4302b;
+            }
+            li:nth-child(4):hover{
+              border-color: #DD4B39;
+              background-color: #DD4B39;
+            }
+            li:nth-child(5):hover{
+              border-color: #3b5998;
+              background: radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%);
+            }
+          }
+        }
+
+        .list-infor{
+          transition: 0.4s ;
+          height: 203px;
+          .wrap-content{
+            height: auto;
+            width: auto;
+            overflow: hidden;
+            .title{font-size: 16px; font-weight: 600; margin-bottom: 20px;}
+            ul{
+              width: 100%;
+              height: auto;
+              li{
+                transition: 0.4s;
+                margin-top: 8px;
+                a{
+                  color: black;
+                  display: block;
+                  font-size: 14px;
+                  transform: translateX(-15px);
+                  font-weight: 300;
+                  i{
+                    padding-right: 5px; 
+                    font-size: 13px;
+                  }
+                }
+              }
+              li:hover{
+                a{
+                  color: var(--background-color);
+                  transform: translateX(0);
+                }
+              }
+            }
+          }
+        }
+
+        .contact-us{
+          .wrap-content{
+            .title{font-size: 16px; font-weight: 600; margin-bottom: 20px;}
+            ul{
+              width: 100%;
+              height: auto;
+              li{
+                transition: 0.4s;
+                margin-top: 10px;
+                a{
+                  display: flex;
+                  color: rgba(0, 0, 0, 0.705);
+                  font-size: 15px;
+                  font-weight: 300;
+                  transform: translateX(0);
+                  i{
+                    padding-right: 15px; 
+                    font-size: 17px;
+                    color: var(--background-color);
+                    padding-top: 3px;
+                  }
+                }
+              }
+              li:hover{
+                a{
+                  color: black;
+                }
+              }
             }
           }
         }

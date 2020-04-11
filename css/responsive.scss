@@ -168,6 +168,39 @@
 			}
 			.main-footer{
 				margin-top: 30px !important;
+
+				.bottom-main{
+					.footer-logo {
+						text-align: center;
+					}
+
+					
+					.view-list {
+						height: 45px !important;
+						overflow: hidden;
+						transition: 0.4s;
+					}
+
+					.title{
+						border-bottom: 1px solid var(--border-color);
+						padding-bottom: 10px;
+						position: relative;
+						cursor: pointer;
+						i{
+							position: absolute;
+							right: 0;
+							top: 0;
+							transition: 0.4s;
+						}
+						.i-rotate{
+							transform: rotateZ(90deg);
+						}
+					}
+
+					.contact-us{
+						margin-bottom: 20px;
+					}
+				}
 			}
 			.bottom-footer{
 				.left{
