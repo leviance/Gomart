@@ -189,3 +189,27 @@ $(document).ready(function(){
   effectLoading();
   effectClickMainFooter();
 })
+
+// close popup letter
+$("#btn-close-popup-letter").on("click", function(){
+  $(".popup-letter").hide();
+})
+
+// scroll to top
+
+$(".btn-go-to-top").on("click", function(){
+  window.scroll({
+    top: 0, 
+    left: 0, 
+    behavior: 'smooth'
+  });
+})
+
+$(document).ready(function(){
+  $(window).on("scroll", function(){
+    if($(this).scrollTop() > 500){
+      $(".btn-go-to-top").show()
+    }
+    else $(".btn-go-to-top").hide()
+  })
+})

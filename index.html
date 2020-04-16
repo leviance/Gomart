@@ -1,11 +1,18 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>GoMart</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
+    <!-- for sharing on facebook -->
+    <meta property="og:url"                content="http://www.hoangdungdev.com/" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="Fresh Food for every body create by Anthony Levi" />
+    <meta property="og:description"        content="Here is my home page i just created, just for fun, and for learn responsive website" />
+    <meta property="og:image"              content="img/itslider.jpg" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- my css -->
@@ -22,6 +29,32 @@
   <body>
     <div id="loading-modal" class="preload">
       <img src="https://innovatory.in/theme/prestashop/Gomart/themes/IT1009/assets/img/preloader.gif" alt="">
+    </div>
+
+    <div class="popup-letter">
+      <div class="wrap-popup">
+          <div class="left"></div>
+          <div class="right">
+            <form action="" method="POST" >
+              <h3>Newsletter</h3>
+              <div>
+                Sign up here to get 20% off on your next purchase, special offers and other discount information.</div>
+              <input class="input-email" type="text" placeholder="Enter your mail">
+              <button type="submit" class="btn btn-primary">Subcribe</button>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" >
+                  Do not show this popup again
+                </label>
+              </div>
+            </form>
+            <div id="btn-close-popup-letter" class="btn-close-popup"><i class="fa fa-times" aria-hidden="true"></i></div>
+          </div>
+      </div>
+    </div>
+
+    <div class="btn-go-to-top">
+      <i class="fas fa-chevron-up"></i>
     </div>
     <!-- -->
     <main>
@@ -1263,14 +1296,7 @@
       </footer>
     </main>
     <!-- -->
-    <div class="popup-news-letter container-fluid" style="visibility: hidden;">
-      <form action="" method="POST" >
-        <div style="width: 300px; min-height: 100px; text-align: center;">sletter
-          Sign up here to get 20% off on your next purchase, special offers and other discount information.</div>
-        <input type="text" placeholder="Enter your mail">
-        <button type="submit" class="btn btn-primary">Subcribe</button>
-      </form>
-    </div>
+   
 
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

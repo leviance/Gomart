@@ -42,6 +42,17 @@
   
   /* ----col-lg----- Màng hình máy tính bảng lớn hoặc máy tính màng hình trung bình */
   @media (min-width: 992px) and (max-width: 1199px) {
+	main header .menu-desktop .bottom-option .wrap-categories .categories .oils-ghee-list {
+		width: 715px !important;
+		.text-top{width:100% !important;}
+		.img-bottom{
+			img{width: 100% !important; }
+		}
+	}
+	main header .menu-desktop .bottom-option .wrap-categories .categories .fruit-veges-list {
+		width: 715px !important;
+		
+	}
     section{
 			.top-categories{
 				position: relative;
@@ -61,7 +72,7 @@
 					.owl-nav{
 						position: absolute;
 						top: -93px;
-    				right: -45% !important;
+    					right: 5% ;
 					}
 				}
 			}
@@ -69,7 +80,7 @@
 			.special-product{
 				.owl-nav{
 					top: -93px !important;
-					right: 0px !important;
+					right: -45% !important;
 				}
 			}
 		}
@@ -77,20 +88,20 @@
   
   /* ----col-md----- Màng hình máy tính bảng nhỏ hoặc máy tính màng hình nhỏ */
   @media (max-width: 991px) {
-		header{
-			.between-menu{
-				height: 70px !important;
-				position: relative;
-				.container{
+	header{
+		.between-menu{
+			height: 70px !important;
+			position: relative;
+			.container{
+				width: 100% !important;
+				.between{
 					width: 100% !important;
-					.between{
-						width: 100% !important;
-						height: auto !important;
-						position: absolute; left: 0; top: 10px;
-					}
+					height: auto !important;
+					position: absolute; left: 0; top: 10px;
 				}
 			}
 		}
+	}
 
 		section{
 			.trending-products{
@@ -228,6 +239,21 @@
   
   /* ----col-sm----- Màng hình máy tính bảng rất nhỏ hoặc điện thoại di động */
   @media (max-width: 767px) {
+	.popup-letter{
+		.wrap-popup{
+			background-color: white;
+			background-image: none !important;
+			.left{display: none !important;}
+			.right{
+				width: 100% !important;
+				.input-email{
+					margin-left: 50% !important;
+    				transform: translateX(-50%);
+				}
+			}
+		}
+	}
+
     section{
 			.Imgslide{
 				.img-banner{

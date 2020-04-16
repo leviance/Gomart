@@ -35,6 +35,18 @@
 
 /* ----col-lg----- Màng hình máy tính bảng lớn hoặc máy tính màng hình trung bình */
 @media (min-width: 992px) and (max-width: 1199px) {
+  main header .menu-desktop .bottom-option .wrap-categories .categories .oils-ghee-list {
+    width: 715px !important;
+  }
+  main header .menu-desktop .bottom-option .wrap-categories .categories .oils-ghee-list .text-top {
+    width: 100% !important;
+  }
+  main header .menu-desktop .bottom-option .wrap-categories .categories .oils-ghee-list .img-bottom img {
+    width: 100% !important;
+  }
+  main header .menu-desktop .bottom-option .wrap-categories .categories .fruit-veges-list {
+    width: 715px !important;
+  }
   section .top-categories {
     position: relative;
   }
@@ -50,11 +62,11 @@
   section .trending-products .slide-trending-products .owl-nav {
     position: absolute;
     top: -93px;
-    right: -45% !important;
+    right: 5%;
   }
   section .special-product .owl-nav {
     top: -93px !important;
-    right: 0px !important;
+    right: -45% !important;
   }
 }
 
@@ -203,6 +215,21 @@
 
 /* ----col-sm----- Màng hình máy tính bảng rất nhỏ hoặc điện thoại di động */
 @media (max-width: 767px) {
+  .popup-letter .wrap-popup {
+    background-color: white;
+    background-image: none !important;
+  }
+  .popup-letter .wrap-popup .left {
+    display: none !important;
+  }
+  .popup-letter .wrap-popup .right {
+    width: 100% !important;
+  }
+  .popup-letter .wrap-popup .right .input-email {
+    margin-left: 50% !important;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
   section .Imgslide .img-banner {
     -ms-grid-columns: 1fr !important;
         grid-template-columns: 1fr !important;
