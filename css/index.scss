@@ -51,7 +51,7 @@ li{list-style: none;}
     width: 90%;
     max-width: 700px;
     height: 460px;
-    background-image: url("../img/popup-letter.jpg");
+    background-image: url("../img/popup-letter.png");
     background-repeat: no-repeat;
     display: flex;
 
@@ -392,7 +392,7 @@ li{list-style: none;}
             overflow-y: scroll; transition: 0.4s;
             .top{
               width: 100%; height: 120px;
-              background-image: url('../img/user-bg.jpg');
+              background-image: url('../img/user-bg.png');
               background-position: center; position: relative;
               a{position: absolute; bottom: 15px; left: 20px; color: white; }
               .register{left: 80px;}
